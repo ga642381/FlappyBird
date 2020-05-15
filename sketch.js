@@ -512,28 +512,46 @@ function keyPressed() {
             stayAngleCount = angleCoolCount;
             if (!MUTE) { wingSound.play(); }
         }
-        if (MODE == "start") {
+        else if (MODE == "start") {
             Vy = -Vup;
             MODE = "playing";
             if (!MUTE) { wingSound.play(); }
         }
 
-        if (MODE == "gameover") {
+        else if (MODE == "gameover") {
             setup();
         }
     }
 }
 
 function mouseClicked() {
-    if (inRange(mouseX, [width - soundOnImg.width * 2 / 3, width]) && inRange(mouseY, [height - soundOnImg.height * 2 / 3, height])) {
+    if (MODE == "playing") {
+        Vy = -Vup;
+        birdAngle = birdUpAngle;
+        stayAngleCount = angleCoolCount;
+        if (!MUTE) { wingSound.play(); }
+    }
 
-        if (MUTE) {
-            MUTE = false;
+
+    else if (MODE == "start") {
+        if (inRange(mouseX, [width - soundOnImg.width * 2 / 3, width]) && inRange(mouseY, [height - soundOnImg.height * 2 / 3, height])) {
+            if (MUTE) {
+                MUTE = false;
+            }
+
+            else {
+                MUTE = true;
+            }
         }
-
         else {
-            MUTE = true;
+            Vy = -Vup;
+            MODE = "playing";
+            if (!MUTE) { wingSound.play(); }
         }
+    }
+
+    else if (MODE == "gameover") {
+        setup();
     }
 }
 
