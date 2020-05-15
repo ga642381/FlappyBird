@@ -6,6 +6,11 @@
 
 
 ## How To Play The Game
+<b>Start The Game</b><br>
+```
+$ bash run.sh
+```
+<img src="./readme_material/terminal.png" width="40%">
 
 <b>Start Screen</b><br>
 <img src="./readme_material/startScreen.png" width="40%">
