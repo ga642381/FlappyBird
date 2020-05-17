@@ -1,9 +1,15 @@
+window.onkeydown = function(e) {
+  if (e.keyCode == 32 && e.target == document.body) {
+    e.preventDefault();
+  }
+};
+
 let cvsWrapper = null;
 
 let MODE;
 let SCORE;
 let state;
-let MUTE = false;
+let MUTE = true;
 
 //Image
 let bgsImg;
@@ -74,48 +80,48 @@ let BESTSCORE = 0;
 
 function preload() {
     /*#################### ( image ) ##################*/
-    baseImg = loadImage("assets/sprites/base.png");
-    startImg = loadImage("assets/sprites/message.png");
-    gameOverImg = loadImage("assets/sprites/gameover.png");
-    fireImg = loadImage("assets/sprites/fire.png");
+    baseImg = loadImage("flappybird/assets/sprites/base.png");
+    startImg = loadImage("flappybird/assets/sprites/message.png");
+    gameOverImg = loadImage("flappybird/assets/sprites/gameover.png");
+    fireImg = loadImage("flappybird/assets/sprites/fire.png");
 
-    soundOnImg = loadImage("assets/sprites/soundOn.png");
-    soundOffImg = loadImage("assets/sprites/soundOff.png");
+    soundOnImg = loadImage("flappybird/assets/sprites/soundOn.png");
+    soundOffImg = loadImage("flappybird/assets/sprites/soundOff.png");
 
     bgsImg = ["day", "night"].map(
-        light => loadImage(`assets/sprites/background-${light}.png`)
+        light => loadImage(`flappybird/assets/sprites/background-${light}.png`)
     );
 
     birdsImg = ["blue", "red", "yellow"].map(
         color => ["midflap", "upflap", "downflap"].map(
-            flap => loadImage(`assets/sprites/${color}bird-${flap}.png`)
+            flap => loadImage(`flappybird/assets/sprites/${color}bird-${flap}.png`)
         )
     );
 
     birdsFireImg = ["midflap", "upflap", "downflap"].map(
-        flap => loadImage(`assets/sprites/redbird-${flap}-fire.png`)
+        flap => loadImage(`flappybird/assets/sprites/redbird-${flap}-fire.png`)
     )
 
     pipesGImg = ["upper", "lower"].map(
-        position => loadImage(`assets/sprites/pipe-green-${position}.png`)
+        position => loadImage(`flappybird/assets/sprites/pipe-green-${position}.png`)
     )
 
     pipesRImg = ["upper", "lower"].map(
-        position => loadImage(`assets/sprites/pipe-red-${position}.png`)
+        position => loadImage(`flappybird/assets/sprites/pipe-red-${position}.png`)
     )
 
     scoresImg = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"].map(
-        number => loadImage(`assets/sprites/${number}.png`)
+        number => loadImage(`flappybird/assets/sprites/${number}.png`)
     )
 
 
 
     /*#################### ( audio ) ##################*/
-    wingSound = loadSound("assets/audio/wing.ogg");
-    scoreSound = loadSound("assets/audio/point.ogg");
-    hitSound = loadSound("assets/audio/hit.ogg");
-    dieSound = loadSound("assets/audio/die.ogg");
-    swooshSound = loadSound("assets/audio/swoosh.ogg");
+    wingSound = loadSound("flappybird/assets/audio/wing.ogg");
+    scoreSound = loadSound("flappybird/assets/audio/point.ogg");
+    hitSound = loadSound("flappybird/assets/audio/hit.ogg");
+    dieSound = loadSound("flappybird/assets/audio/die.ogg");
+    swooshSound = loadSound("flappybird/assets/audio/swoosh.ogg");
 }
 
 
