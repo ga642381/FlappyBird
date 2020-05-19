@@ -1,7 +1,9 @@
-window.onkeydown = function(e) {
-  if (e.keyCode == 32 && e.target == document.body) {
-    e.preventDefault();
-  }
+p5.disableFriendlyErrors = true;
+
+window.onkeydown = function (e) {
+    if (e.keyCode == 32 && e.target == document.body) {
+        e.preventDefault();
+    }
 };
 
 let cvsWrapper = null;
