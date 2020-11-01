@@ -1,4 +1,4 @@
-# Flappy bird
+# Super Flappy bird
 <img src="./readme_material/redbird-upflap-fire.png" width="20%">
 
 ## Demo
