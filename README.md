@@ -7,6 +7,8 @@
   </h1>
 </p>
 
+<br>
+
 ## Demo
 <p align="center">
     <br>
@@ -15,7 +17,7 @@
 </p>
 
 
-## How To Play The Game
+## Quick Start
 <b>Start The Game</b><br>
 ```
 $ bash run.sh
@@ -29,6 +31,8 @@ $ bash run.sh
 * Click <img src="./readme_material/soundOn.png" width="2.5%"> to mute the sound effect in the game.
 * The color of the bird and the backgound will be randomly generated in the beginning.
 <br>
+
+## How To Play The Game
 
 <b>Playing</b><br>
 <img src="./readme_material/playingScreen.png" width="40%">
