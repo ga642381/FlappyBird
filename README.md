@@ -1,8 +1,18 @@
-# Super Flappy bird
-<img src="./readme_material/redbird-upflap-fire.png" width="20%">
+<p align="center">
+    <br>
+      <img src="./readme_material/redbird-upflap-fire.png" width="20%">
+    <br>
+  <h1 align="center">
+    Super Flappy Bird :fire:
+  </h1>
+</p>
 
 ## Demo
-![image](./readme_material/demo.gif)
+<p align="center">
+    <br>
+      <img src="./readme_material/demo.gif" width=400px>
+    <br>
+</p>
 
 
 ## How To Play The Game
