@@ -9,6 +9,8 @@
 
 <br>
 
+<p align="center"> You can play Super Flappy Bird on our website <a href="https://weikaiwei.com">都會阿嬤 weikaiwei.com</a> <br><br>https://weikaiwei.com/FlappyBird/ </p>
+
 ## Demo
 <p align="center">
     <br>
