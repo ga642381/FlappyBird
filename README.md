@@ -39,7 +39,7 @@ $ bash run.sh
 <b>Playing</b><br>
 <img src="./readme_material/playingScreen.png" width="40%">
 
-* Press the spacebar to fly higher
+* Press the spacebar to fly higher.
 * Touch the fire <img src="./readme_material/fire.png" width="2.5%"> 
   , then the bird will be invincible <img src="./readme_material/redbird-upflap-fire.png" width="7%"> 
   and fly through the pipes.
@@ -49,4 +49,4 @@ $ bash run.sh
 <img src="./readme_material/gameoverScreen.png" width="40%">
 
 * Hit spacebar to start a new game!
-* The highest score will be saved
+* The highest score will be saved.
